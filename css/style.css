@@ -1,0 +1,165 @@
+:root {
+  --main-bg-color: #32746d;
+  --text-bg-color: rgb(238, 227, 227);
+  --main-bg-color: #32746d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4a7560;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+input#search {
+  outline: none !important;
+  background-color: rgba(255, 255, 255, 0.021);
+  color: #eee;
+}
+input#search::-moz-placeholder {
+  color: #b4a5a5;
+}
+input#search:-ms-input-placeholder {
+  color: #b4a5a5;
+}
+input#search::placeholder {
+  color: #b4a5a5;
+}
+
+input {
+  position: relative;
+  width: 100%;
+  font-family: inherit;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  border: 1px solid rgba(238, 238, 238, 0.24);
+  outline: none;
+}
+
+.search {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0;
+  background: transparent;
+}
+
+.d-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-expand {
+  grid-column: 1/span 4;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+@media (max-width: 1200px) {
+  .grid-expand {
+    grid-column: 1/span 3;
+  }
+}
+@media (max-width: 700px) {
+  .grid-expand {
+    grid-column: 1/span 2;
+  }
+}
+@media (max-width: 500px) {
+  .grid-expand {
+    grid-column: 1;
+  }
+}
+
+.error {
+  display: block;
+  width: 400px;
+  margin: auto;
+  padding: 0.5rem 0.5rem;
+  visibility: hidden;
+  transition: all 0.7s;
+  opacity: 0;
+}
+
+.danger {
+  background: rgba(255, 127, 80, 0.288);
+}
+
+.bg-secondary {
+  background-color: #041a17 !important;
+  color: rgba(255, 255, 255, 0.808);
+}
+
+.bg-secondary:hover {
+  background-color: #08332d !important;
+  color: #fff;
+}
+
+.pos-absolute {
+  position: absolute;
+  padding: 5px;
+  top: 5%;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.726);
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .pos-absolute {
+    width: 100%;
+  }
+}
+
+.modal-header.modal-new {
+  background-color: #041a17 !important;
+  border: 0;
+}
+
+.modal-body {
+  background-color: #062723;
+  color: #eee;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.text-yellow {
+  color: #f8f797;
+}/*# sourceMappingURL=style.css.map */
